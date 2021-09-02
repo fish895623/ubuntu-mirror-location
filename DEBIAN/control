@@ -1,0 +1,6 @@
+Package: ubuntu-mirror-location
+Version: 0.0.1
+Maintainer: fish895623 <dan990429+github@gmail.com>
+Architecture: all
+Depends: sed, lsb-release
+Description: Add fastest and multiple mirror from your location

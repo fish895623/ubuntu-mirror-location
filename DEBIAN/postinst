@@ -1,0 +1,12 @@
+#!/bin/bash
+################################################################################
+# postinstall script main
+################################################################################
+case "$1" in
+    configure)
+        CODE=$(lsb_release -c --short)
+        sed -i "s/CODENAME/${CODE}/g" /etc/apt/sources.list.d/ubuntu-mirror-location.list
+    ;;
+    upgrade)
+    ;;
+esac
